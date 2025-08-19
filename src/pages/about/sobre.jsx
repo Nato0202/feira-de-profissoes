@@ -1,58 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './Home.scss'
+import React from "react";
+import Navbar from "../../components/Navbar/navbar";
+import Footer from "../../components/Footer/footer";
+import "./sobre.scss";
 
-function Home() {
-
+const Sobre = () => {
   return (
     <>
-      <nav>
-        <img src="" alt="logo" />
-        <div className="searchBar">
-          <input type="Pesquisa"/>
-        </div>
-        <div className="menu">
-          
-        </div>
-      </nav>
-      <main>
-        <div>
-        <h1>Sobre a Feira de Profissões</h1>
-        <a href="https://www.google.com.br/maps/place/Instituto+Social+Nossa+Senhora+de+Fátima/@-23.6803333,-46.7079309,17z/data=!3m1!4b1!4m9!1m2!10m1!1e1!3m5!1s0x94ce502d2289a843:0x14406b17b30d0174!8m2!3d-23.6803333!4d-46.7079309!16s%2Fg%2F1ptxj22k2?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDgxMi4wIKXMDSoASAFQAw%3D%3D">Instituto Social Nossa Senhora de Fátima</a>
-        <h1>Mapa<span>:</span></h1>
-        <img src="" alt="mapa" />
-        </div>
-      </main>
-      <footer>
-        <div className="start">
-          <h1>Expositores<span>:</span></h1>
-          <img src="" alt="santander" />
-          <img src="" alt="PWI" />
-        </div>
-        <div className="end">
-          <h1>Contato<span>:</span></h1>
-          <div className="email">
-            <img src="" alt="email" />
-            <a href="" className='email'>
-              <p>email: secretaria1@acaonsfatima.org.br</p>
-            </a>
-          </div>
-          <div className="telefone">
-            <img src="" alt="telefone" />
-            <p>11 5687-8876</p>
-          </div>
-          <div className="SAC">
-            <img src="" alt="SAC" />
-            <a href="" className='SAC'>
-              Fale Conosco
-            </a>
-          </div>
-          <img src="" alt="logo2" />
-        </div>
-      </footer>
-    </>
-  )
-}
+      <Navbar />
 
-export default Home;
+      <main className="sobre-container">
+        <section className="sobre-header">
+          <h2>Sobre a Feira de Profissões:</h2>
+          <div className="sobre-info">
+            <p><b>Data:</b> 20/05/2025 - 21/05/2025</p>
+            <p><b>Horário:</b> 09h às 12h e 13h às 16h</p>
+            <p><b>Endereço:</b> Instituto Nossa Senhora do Patrocínio</p>
+          </div>
+        </section>
+
+        <section className="sobre-mapa">
+          <iframe
+            title="Localização"
+            src="https://www.google.com/maps/embed?..."
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+        </section>
+
+        <section className="sobre-mapas">
+          <h3>Mapas:</h3>
+          <div className="mapas-lista">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="mapa-card">
+                <img src="/src/assets/images/image.png" alt={`Mapa ${i}`} />
+                <div className="legenda">
+                  <p><b>Legenda:</b></p>
+                  <ul>
+                    <li>Pavilhão 1</li>
+                    <li>Pavilhão 2</li>
+                    <li>Banheiros</li>
+                    <li>Alimentação</li>
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+};
+
+export default Sobre;
