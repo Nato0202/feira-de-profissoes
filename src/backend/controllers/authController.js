@@ -1,6 +1,6 @@
 import bcrypt from "bcryptjs";
-import { createAluno, findAlunoByEmail } from "../models/alunoModel.js";
-import { createVisitante, findVisitanteByNomeAndQrCode } from "../models/visitanteModel.js";
+import aluno from "../models/alunoModel.js";
+import visitante from "../models/visitanteModel.js";
 import { generateToken } from "../middleware/generateToken.js";
 import crypto from "crypto";
 
@@ -10,7 +10,7 @@ export async function registerAluno(req, res) {
     const { email, senha } = req.body;
 
     const hashedPassword = await bcrypt.hash(senha, 10);
-    await createAluno(email, hashedPassword);
+    await aluno.createAluno(email, hashedPassword);
 
     res.status(201).json({ message: "Aluno registrado com sucesso!" });
   } catch (err) {
@@ -22,7 +22,7 @@ export async function loginAluno(req, res) {
   try {
     const { email, senha } = req.body;
 
-    const aluno = await findAlunoByEmail(email);
+    const aluno = await aluno.findAlunoByEmail(email);
     if (!aluno) {
       return res.status(404).json({ error: "Aluno não encontrado" });
     }
@@ -45,7 +45,7 @@ export async function registerVisitante(req, res) {
     const data = req.body;
     const qrCode = crypto.randomBytes(4).toString("hex"); // Gera código único
 
-    await createVisitante(data, qrCode);
+    await visitante.createVisitante(data, qrCode);
 
     res
       .status(201)
@@ -59,7 +59,7 @@ export async function loginVisitante(req, res) {
   try {
     const { nome, qr_code } = req.body;
 
-    const visitante = await findVisitanteByNomeAndQrCode(nome, qr_code);
+    const visitante = await visitante.findVisitanteByNomeAndQrCode(nome, qr_code);
     if (!visitante) {
       return res.status(404).json({ error: "Visitante não encontrado" });
     }

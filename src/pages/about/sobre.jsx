@@ -21,7 +21,7 @@ function Home() {
         <h1>Sobre a Feira de Profissões</h1>
         <a href="https://www.google.com.br/maps/place/Instituto+Social+Nossa+Senhora+de+Fátima/@-23.6803333,-46.7079309,17z/data=!3m1!4b1!4m9!1m2!10m1!1e1!3m5!1s0x94ce502d2289a843:0x14406b17b30d0174!8m2!3d-23.6803333!4d-46.7079309!16s%2Fg%2F1ptxj22k2?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDgxMi4wIKXMDSoASAFQAw%3D%3D">Instituto Social Nossa Senhora de Fátima</a>
         <h1>Mapa<span>:</span></h1>
-        
+        <img src="" alt="mapa" />
         </div>
       </main>
       <footer>
