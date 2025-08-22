@@ -3,7 +3,10 @@ import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
 import "./sobre.scss";
 
-const Sobre = () => {
+// importa a imagem 1x só
+import mapaImage from "../../assets/images/image.png";
+
+function Sobre() {
   return (
     <>
       <Navbar />
@@ -21,11 +24,11 @@ const Sobre = () => {
         <section className="sobre-mapa">
           <iframe
             title="Localização"
-            src="https://www.google.com/maps/embed?..."
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3..."
             width="100%"
             height="300"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
           ></iframe>
         </section>
@@ -35,7 +38,7 @@ const Sobre = () => {
           <div className="mapas-lista">
             {[1, 2, 3].map((i) => (
               <div key={i} className="mapa-card">
-                <img src="/src/assets/images/image.png" alt={`Mapa ${i}`} />
+                <img src={mapaImage} alt={`Mapa ${i}`} />
                 <div className="legenda">
                   <p><b>Legenda:</b></p>
                   <ul>
@@ -54,6 +57,6 @@ const Sobre = () => {
       <Footer />
     </>
   );
-};
+}
 
 export default Sobre;

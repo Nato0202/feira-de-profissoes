@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
 import "./Register.scss";
 
-const Register = () => {
+function Register() {
   return (
     <>
       <Navbar />
@@ -39,7 +39,6 @@ const Register = () => {
 
       <Footer />
     </>
-  );
-};
+)};
 
 export default Register;

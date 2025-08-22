@@ -30,7 +30,6 @@ function Home() {
       </main>
       <Footer />
       </>
-)
-}
+)};
 
 export default Home;

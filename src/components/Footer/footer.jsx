@@ -6,8 +6,8 @@ export default function Footer() {
       <section className="exhibitors">
         <h3>Expositores:</h3>
         <div className="logos">
-          <img src="/logos/santander.png" alt="Santander" />
-          <img src="/logos/pwi.png" alt="PWI Sistemas" />
+          <img src="/images/santander.jpg" alt="Santander" />
+          <img src="/images/pwi.jpg" alt="PWI Sistemas" />
         </div>
       </section>
 

@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/footer.jsx";
 import "./Login.scss";
 
 
-const Login = () => {
+function Login (){
   return (
     <>
       <Navbar />
@@ -20,8 +20,7 @@ const Login = () => {
 
       <Footer />
     </>
-  );
-};
+)};
 
 
 export default Login;
