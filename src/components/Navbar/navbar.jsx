@@ -27,12 +27,12 @@ export default function Navbar() {
         </div>
 
         <nav className="menu">
-          <NavLink to="/inscricao">Inscrição</NavLink>
-          <NavLink to="/login-qr">Login QR</NavLink>
+          <NavLink to="/about">Sobre</NavLink>
+          <NavLink to="/history">História</NavLink>
           <NavLink to="/login">Login Aluno</NavLink>
-          <NavLink to="/busca-visitante">Busca</NavLink>
-          <NavLink to="/historia">História</NavLink>
-          <NavLink to="/sobre">Sobre</NavLink>
+          <NavLink to="/register">Inscrição</NavLink>
+          <NavLink to="/search">Busca</NavLink>
+
         </nav>
 
         <button 
