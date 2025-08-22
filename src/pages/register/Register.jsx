@@ -1,10 +1,9 @@
 import React from "react";
-import Navbar from "../../components/Navbar/navbar";
-import Footer from "../../components/Footer/footer";
-import Button from "../../components/button";
+import Navbar from "../../components/Navbar/navbar.jsx";
+import Footer from "../../components/Footer/footer.jsx";
 import "./Register.scss";
 
-const VisitanteRegister = () => {
+const Register = () => {
   return (
     <>
       <Navbar />
@@ -43,4 +42,4 @@ const VisitanteRegister = () => {
   );
 };
 
-export default VisitanteRegister;
+export default Register;

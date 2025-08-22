@@ -1,7 +1,8 @@
 import React from "react";
-import Navbar from "../../components/Navbar/navbar";
-import Footer from "../../components/Footer/footer";
+import Navbar from "../../components/Navbar/navbar.jsx";
+import Footer from "../../components/Footer/footer.jsx";
 import "./sobre.scss";
+import CursosCarousel from "../../components/carrossel/carrosel.jsx";
 
 const Sobre = () => {
   return (
