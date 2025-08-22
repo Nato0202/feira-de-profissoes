@@ -47,5 +47,4 @@
      );
    };
 
-   export default History; // Certifique-se de que a exportação padrão está correta
-   
+   export default History;
