@@ -13,7 +13,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar__inner">
         {/* Logo */}
-        <Link to="/about" className="navbar__brand">
+        <Link to="/" className="navbar__brand">
           <img src="/images/image.png" alt="Logo" />
         </Link>
 
