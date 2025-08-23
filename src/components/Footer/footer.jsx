@@ -6,8 +6,8 @@ export default function Footer() {
       <section className="exhibitors">
         <h3>Expositores:</h3>
         <div className="logos">
-          <img src="/images/santander.jpg" alt="Santander" />
-          <img src="/images/pwi.jpg" alt="PWI Sistemas" />
+          <img src="/images/Santander.jpg" alt="Santander" />
+          <img src="/images/Pwi.jpg" alt="PWI Sistemas" />
         </div>
       </section>
 
@@ -30,7 +30,9 @@ export default function Footer() {
       </section>
 
       <div className="fair-logo">
-        <img src="/logo-feira.png" alt="Feira de Profissões" />
+          <img src="/images/santander.jpg" alt="Santander" />
+          <img src="/images/pwi.jpg" alt="PWI Sistemas" />
+        <img src="/images/image.png" alt="Feira de Profissões" />
       </div>
     </footer>
   );

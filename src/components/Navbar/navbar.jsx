@@ -13,8 +13,8 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar__inner">
         {/* Logo */}
-        <Link to="/sobre" className="navbar__brand">
-          <img src="/logo.png" alt="Logo" />
+        <Link to="/about" className="navbar__brand">
+          <img src="/images/image.png" alt="Logo" />
         </Link>
 
         {/* Busca */}
@@ -25,11 +25,11 @@ export default function Navbar() {
 
         {/* Menu Desktop */}
         <nav className="navbar__desktop-menu">
-          <NavLink to="/sobre">Sobre</NavLink>
-          <NavLink to="/historia">História</NavLink>
-          <NavLink to="/login">Login Aluno</NavLink>
-          <NavLink to="/inscricao">Inscrição</NavLink>
-          <NavLink to="/busca-visitante">Busca</NavLink>
+          <NavLink to="/about">Sobre</NavLink>
+          <NavLink to="/history">História</NavLink>
+          <NavLink to="/login">Login</NavLink>
+          <NavLink to="/register">Inscrição</NavLink>
+          <NavLink to="/search">Busca</NavLink>
         </nav>
 
         {/* Botão Hamburguer (só mobile) */}

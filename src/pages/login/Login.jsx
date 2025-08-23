@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
+import Input from "../../components/input.jsx";
+import Button from "../../components/button.jsx";
 import "./Login.scss";
 
 

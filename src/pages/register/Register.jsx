@@ -33,7 +33,7 @@ function Register() {
             <option>Não</option>
           </select>
           <input type="text" placeholder="CPF" required />
-          <Button text="Inscrever-se" type="submit" />
+          <button type="submit">Inscrever-se</button>
         </form>
       </main>
 

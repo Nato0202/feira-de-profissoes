@@ -1,4 +1,7 @@
 import jwt from "jsonwebtoken";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export function verifyToken(req, res, next) {
   const authHeader = req.headers["authorization"];
@@ -21,7 +24,7 @@ export function verifyToken(req, res, next) {
     req.user = decoded;
 
     next(); // segue para a rota
-  } catch (err) {
+  } catch {
     return res.status(403).json({ message: "Token inválido ou expirado" });
   }
 }

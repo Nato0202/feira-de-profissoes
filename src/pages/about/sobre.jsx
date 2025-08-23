@@ -3,9 +3,6 @@ import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
 import "./sobre.scss";
 
-// importa a imagem 1x só
-import mapaImage from "../../assets/images/image.png";
-
 function Sobre() {
   return (
     <>
@@ -38,7 +35,10 @@ function Sobre() {
           <div className="mapas-lista">
             {[1, 2, 3].map((i) => (
               <div key={i} className="mapa-card">
-                <img src={mapaImage} alt={`Mapa ${i}`} />
+                <img
+                  src={`/images/mapa${i}.png`}
+                  alt={`Mapa ${i}`}
+                />
                 <div className="legenda">
                   <p><b>Legenda:</b></p>
                   <ul>

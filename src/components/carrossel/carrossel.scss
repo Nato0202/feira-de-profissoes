@@ -44,12 +44,12 @@ body {
     // Navegação do carrossel
     .swiper-button-prev,
     .swiper-button-next {
-      color: #fff;
+      color: #ffa600;
       font-weight: bold;
       transition: 0.3s;
 
       &:hover {
-        color: #ffd700; // destaque dourado no hover
+        color: #ff7700; // destaque dourado no hover
         transform: scale(1.2);
       }
     }

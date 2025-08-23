@@ -29,7 +29,7 @@ const HamburgerMenu = ({ isOpen, onClose }) => {
         
         <div className="hamburger-menu__content">
           <NavLink 
-            to="/inscricao" 
+            to="/register" 
             className="hamburger-menu__link"
             onClick={handleLinkClick}
           >
@@ -37,23 +37,15 @@ const HamburgerMenu = ({ isOpen, onClose }) => {
           </NavLink>
           
           <NavLink 
-            to="/login-qr" 
-            className="hamburger-menu__link"
-            onClick={handleLinkClick}
-          >
-            Login QR
-          </NavLink>
-          
-          <NavLink 
             to="/login" 
             className="hamburger-menu__link"
             onClick={handleLinkClick}
           >
-            Login Aluno
+            Login
           </NavLink>
           
           <NavLink 
-            to="/busca-visitante" 
+            to="/search" 
             className="hamburger-menu__link"
             onClick={handleLinkClick}
           >
@@ -61,7 +53,7 @@ const HamburgerMenu = ({ isOpen, onClose }) => {
           </NavLink>
           
           <NavLink 
-            to="/historia" 
+            to="/history" 
             className="hamburger-menu__link"
             onClick={handleLinkClick}
           >
@@ -69,7 +61,7 @@ const HamburgerMenu = ({ isOpen, onClose }) => {
           </NavLink>
           
           <NavLink 
-            to="/sobre" 
+            to="/about" 
             className="hamburger-menu__link"
             onClick={handleLinkClick}
           >

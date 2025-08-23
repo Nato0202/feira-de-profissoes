@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from "react";
 import './Home.scss'
 import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
@@ -14,7 +14,7 @@ function Home() {
       <main>
         <section>
           <div className="apresentacao">
-            <img src="" alt="apresentacao" />
+            <img src="/src/assets/images/image.png" alt="apresentacao" />
           </div>
             <div className="parceiros">
               <h1>Parceiros<span>:</span></h1>
