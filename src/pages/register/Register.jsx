@@ -69,8 +69,17 @@ function Register() {
           </select>
           <select name="interesses" value={formData.interesses} onChange={handleChange}>
             <option value="">Interesse em algum curso</option>
-            <option value="Informática">Informática</option>
             <option value="Administração">Administração</option>
+            <option value="Informática">Informática</option>
+            <option value="Comunicação visual">Comunicação visual</option>
+            <option value="Eletromecânica de autos">Eletromecânica de autos</option>
+            <option value="Secretariado">Secretariado</option>
+            <option value="Eletrotécnica">Eletrotécnica</option>
+            <option value="Eletricista instalador">Eletricista instalador</option>
+            <option value="Informática (básica)">Informática (básica)</option>
+            <option value="Assistente administrativo">Assistente administrativo</option>
+            <option value="Assistente de mídias sociais">Assistente de mídias sociais</option>
+            <option value="Inglês">Inglês</option>
           </select>
           <input 
             type="text" 

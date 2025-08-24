@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Footer from "../../components/Footer/footer";
+import Navbar from "../../components/Navbar/navbar";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -24,6 +26,8 @@ function Login() {
   };
 
   return (
+    <>
+    <Navbar />
     <form onSubmit={handleLogin}>
       <input
         type="email"
@@ -39,6 +43,8 @@ function Login() {
       />
       <button type="submit">Entrar</button>
     </form>
+    <Footer />
+    </>
   );
 }
 

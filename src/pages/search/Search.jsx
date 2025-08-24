@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Footer from "../../components/Footer/footer";
+import Navbar from "../../components/Navbar/navbar";
 
 function Search() {
   const [nome, setNome] = useState("");
@@ -24,6 +26,7 @@ function Search() {
 
   return (
     <div>
+      <Navbar />
       <input
         type="text"
         placeholder="Nome"
@@ -45,6 +48,7 @@ function Search() {
           </li>
         ))}
       </ul>
+      <Footer />
     </div>
   );
 }
