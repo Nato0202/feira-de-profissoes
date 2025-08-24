@@ -1,23 +1,52 @@
-import React from "react";
-import Navbar from "../../components/Navbar/navbar";
-import Footer from "../../components/Footer/footer";
-import "./Search.scss";
+import { useState } from "react";
 
-function Search(){
+function Search() {
+  const [nome, setNome] = useState("");
+  const [qrCode, setQrCode] = useState("");
+  const [results, setResults] = useState([]);
+
+  const handleSearch = async () => {
+    try {
+      const res = await fetch(
+        `http://localhost:5001/api/auth/visitantes/search?nome=${encodeURIComponent(
+          nome
+        )}&qrCode=${encodeURIComponent(qrCode)}`
+      );
+
+      if (!res.ok) throw new Error("Erro na busca");
+
+      const data = await res.json();
+      setResults(data);
+    } catch (err) {
+      alert(err.message);
+    }
+  };
+
   return (
-    <>
-      <Navbar />
-        <main className="busca-container">
-          <h2>Busca do visitante:</h2>
-          <form className="busca-form">
-            <input placeholder="Nome" type="text" />
-            <button type="submit" className="btn-search">
-               🔍
-            </button>
-          </form>
-        </main>
-        <Footer />
-      </>
-)};
+    <div>
+      <input
+        type="text"
+        placeholder="Nome"
+        value={nome}
+        onChange={(e) => setNome(e.target.value)}
+      />
+      <input
+        type="text"
+        placeholder="QR Code"
+        value={qrCode}
+        onChange={(e) => setQrCode(e.target.value)}
+      />
+      <button onClick={handleSearch}>Buscar</button>
 
-   export default Search; 
+      <ul>
+        {results.map((v) => (
+          <li key={v.id}>
+            {v.nome} - {v.email} - {v.telefone}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default Search;

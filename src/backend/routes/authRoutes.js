@@ -12,6 +12,9 @@ router.post("/login/aluno", repo.loginAluno);
 router.post("/register/visitante", repo.registerVisitante);
 router.post("/login/visitante", repo.loginVisitante);
 
+// Busca de visitantes
+router.get("/visitantes/search", repo.searchVisitantes);
+
 // Rota protegida (token jwt necessário)
 router.get("/perfil", token.verifyToken, (req, res) => {
   res.json({ message: "Acesso autorizado!", user: req.user });

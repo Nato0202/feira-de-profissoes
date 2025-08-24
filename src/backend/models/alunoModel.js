@@ -1,10 +1,10 @@
 import { connection } from "../config/db.js";
 
 // Criar aluno
-export async function createAluno(email, senhaCriptografada) {
+export async function createAluno(email, hashedPassword) {
   const [result] = await connection.execute(
-    "INSERT INTO alunos (email, senha) VALUES (?, ?)",
-    [email, senhaCriptografada]
+    "INSERT INTO alunos (email, password) VALUES (?, ?)",
+    [email, hashedPassword]
   );
   return result;
 }

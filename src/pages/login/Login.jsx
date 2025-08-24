@@ -1,28 +1,45 @@
-import React from "react";
-import Navbar from "../../components/Navbar/navbar.jsx";
-import Footer from "../../components/Footer/footer.jsx";
-import Input from "../../components/input.jsx";
-import Button from "../../components/button.jsx";
-import "./Login.scss";
+import { useState } from "react";
 
+function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-function Login (){
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("http://localhost:5001/api/auth/login/aluno", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, senha: password }),
+      });
+
+      if (!res.ok) throw new Error("Erro no login");
+
+      const data = await res.json();
+      localStorage.setItem("token", data.token); // guarda JWT
+      alert("Login realizado com sucesso!");
+    } catch (err) {
+      alert(err.message);
+    }
+  };
+
   return (
-    <>
-      <Navbar />
-
-      <main className="login-container">
-        <h2>Login</h2>
-        <form className="login-form">
-          <Input placeholder="E-mail" type="email" />
-          <Input placeholder="Senha" type="password" />
-          <Button text="Entrar" type="submit" />
-        </form>
-      </main>
-
-      <Footer />
-    </>
-)};
-
+    <form onSubmit={handleLogin}>
+      <input
+        type="email"
+        placeholder="E-mail"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <input
+        type="password"
+        placeholder="Senha"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button type="submit">Entrar</button>
+    </form>
+  );
+}
 
 export default Login;
