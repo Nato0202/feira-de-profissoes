@@ -1,4 +1,5 @@
 import React from "react";
+import "./footer.scss"
 
 export default function Footer() {
   return (
@@ -6,8 +7,8 @@ export default function Footer() {
       <section className="exhibitors">
         <h3>Expositores:</h3>
         <div className="logos">
-          <img src="/images/Santander.jpg" alt="Santander" />
-          <img src="/images/Pwi.jpg" alt="PWI Sistemas" />
+          <img id="santanderimg" src="/images/Santander.jpg" alt="Santander" />
+          <img id="pwiimg" src="/images/Pwi.jpg" alt="PWI Sistemas" />
         </div>
       </section>
 
@@ -33,6 +34,9 @@ export default function Footer() {
           <img src="/images/santander.jpg" alt="Santander" />
           <img src="/images/pwi.jpg" alt="PWI Sistemas" />
         <img src="/images/image.png" alt="Feira de Profissões" />
+      </div>
+      <div>
+        <img src="" alt="" />
       </div>
     </footer>
   );

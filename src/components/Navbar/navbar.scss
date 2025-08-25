@@ -1,3 +1,9 @@
+.navbar__inner{
+  display: flex;
+  height: 150px;
+  gap: 15px;
+}
+
 .navbar__desktop-menu {
   display: flex;
   gap: 1rem;
@@ -6,11 +12,17 @@
     display: none;
   }
 }
-
+.navbar{
+  background-image: url();
+  @media (max-width: 768px) {
+    width: 768px;
+  }
+}
 .navbar__hamburger {
   display: none;
-
+  justify-content: end;
   @media (max-width: 768px) {
     display: block;
+    height: 45px;
   }
 }

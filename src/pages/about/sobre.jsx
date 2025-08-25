@@ -21,7 +21,7 @@ function Sobre() {
         <section className="sobre-mapa">
           <iframe
             title="Localização"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3..."
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3"
             width="100%"
             height="300"
             style={{ border: 0 }}

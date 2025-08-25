@@ -14,15 +14,9 @@ export default function Navbar() {
       <div className="navbar__inner">
         {/* Logo */}
         <Link to="/" className="navbar__brand">
-          <img src="/images/image.png" alt="Logo" />
+          <img src="../../images/image.png" alt="Logo" />
         </Link>
-
-        {/* Busca */}
-        <div className="navbar__search">
-          <input type="text" placeholder="Pesquisar" className="navbar__search-input"/>
-          <button aria-label="Pesquisar" className="navbar__search-button">🔎</button>
-        </div>
-
+        
         {/* Menu Desktop */}
         <nav className="navbar__desktop-menu">
           <NavLink to="/about">Sobre</NavLink>
@@ -31,6 +25,12 @@ export default function Navbar() {
           <NavLink to="/register">Inscrição</NavLink>
           <NavLink to="/search">Busca</NavLink>
         </nav>
+
+        {/* Busca */}
+        <div className="navbar__search">
+          <input type="text" placeholder="Pesquisar" className="navbar__search-input"/>
+          <button aria-label="Pesquisar" className="navbar__search-button">🔎</button>
+        </div>
 
         {/* Botão Hamburguer (só mobile) */}
         <button 

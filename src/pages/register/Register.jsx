@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
-import "./Register.scss";
+import "../register/Register.scss";
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -49,11 +49,12 @@ function Register() {
   return (
     <>
       <Navbar />
-
       <main className="register-container">
-        <h2>Inscrição</h2>
+        <div className="jojo">
+        <p id="h2">Inscrição</p>
         <form className="register-form" onSubmit={handleSubmit}>
           <input 
+          className="container"
             type="text" 
             name="nome"
             placeholder="Nome" 
@@ -61,13 +62,16 @@ function Register() {
             onChange={handleChange}
             required 
           />
-          <select name="escolaridade" value={formData.escolaridade} onChange={handleChange}>
+          <div>
+          <select className="container container2" name="escolaridade" value={formData.escolaridade} onChange={handleChange}>
             <option value="">Escolaridade</option>
             <option value="Ensino Fundamental">Ensino Fundamental</option>
             <option value="Ensino Médio">Ensino Médio</option>
             <option value="Ensino Superior">Ensino Superior</option>
           </select>
-          <select name="interesses" value={formData.interesses} onChange={handleChange}>
+          </div>
+          <div>
+            <select className="container container2" name="interesses" value={formData.interesses} onChange={handleChange}>
             <option value="">Interesse em algum curso</option>
             <option value="Administração">Administração</option>
             <option value="Informática">Informática</option>
@@ -81,14 +85,20 @@ function Register() {
             <option value="Assistente de mídias sociais">Assistente de mídias sociais</option>
             <option value="Inglês">Inglês</option>
           </select>
+          </div>
+          <div className="previ">
           <input 
+          className="container"
             type="text" 
             name="previsao_chegada"
             placeholder="Previsão de chegada à feira" 
             value={formData.previsao_chegada}
             onChange={handleChange}
           />
+          </div>
+          <div className="ema">
           <input 
+          className="container"
             type="email" 
             name="email"
             placeholder="E-mail" 
@@ -96,26 +106,37 @@ function Register() {
             onChange={handleChange}
             required 
           />
+          </div>
+          <div className="como">
           <input 
+          className="container"
             type="text" 
             name="como_soube"
             placeholder="Como ficou sabendo da feira?" 
             value={formData.como_soube}
             onChange={handleChange}
           />
+          </div>
+          <div className="tel">
           <input 
+          className="container"
             type="tel" 
             name="telefone"
             placeholder="Telefone" 
             value={formData.telefone}
             onChange={handleChange}
           />
-          <select name="ja_foi_aluno" value={formData.ja_foi_aluno} onChange={handleChange}>
+          </div>
+          <div className="jafoi">
+          <select className="container container2" name="ja_foi_aluno" value={formData.ja_foi_aluno} onChange={handleChange}>
             <option value="0">Já foi aluno do Frei?</option>
             <option value="1">Sim</option>
             <option value="0">Não</option>
           </select>
-          <input 
+          </div>
+          <div className="cpf">
+          <input
+          className="container" 
             type="text" 
             name="cpf"
             placeholder="CPF" 
@@ -123,8 +144,12 @@ function Register() {
             onChange={handleChange}
             required 
           />
-          <button type="submit">Inscrever-se</button>
+          </div>
+          <div>
+          <button id="increve" type="submit">Inscreva-se</button>
+          </div>
         </form>
+        </div>
       </main>
 
       <Footer />
