@@ -4,14 +4,13 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./carrossel.scss";
+import "./carrossel-Prof.scss";
 
 
-
-export default function CursosCarousel() {
-  const cursos = [
+export default function ProfessoresCarousel() {
+  const Professores = [
     {
-      titulo: "ADMINISTRAÇÃO",
+      titulo: "Bruno Oliveira",
       icone: "👨‍💼",
       lista: [
         "Finanças",
@@ -23,7 +22,7 @@ export default function CursosCarousel() {
       ],
     },
     {
-      titulo: "INFORMÁTICA",
+      titulo: "Pedro Moreira",
       icone: "💻",
       lista: [
         "Fundamentos da computação",
@@ -35,7 +34,7 @@ export default function CursosCarousel() {
       ],
     },
     {
-      titulo: "COMUNICAÇÃO VISUAL",
+      titulo: "Natan",
       icone: "🎨",
       lista: [
         "Design Gráfico",
@@ -47,7 +46,7 @@ export default function CursosCarousel() {
       ],
     },
     {
-      titulo: "ELETROMECÂNICA DE AUTOS",
+      titulo: "Robson",
       icone: "🚗",
       lista: [
         "Fundamentos de Mecânica",
@@ -59,7 +58,7 @@ export default function CursosCarousel() {
       ],
     },
     {
-      titulo: "SECRETARIADO",
+      titulo: "Eduardo",
       icone: "📝",
       lista: [
         "Gestão de Agenda",
@@ -144,14 +143,14 @@ export default function CursosCarousel() {
   ];
 
   return (
-    <section className="cursos">
-      <h2 className="titulo">Cursos:</h2>
+    <section className="professores">
+      <h2 className="titulo">Professores:</h2>
 
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
         pagination={{ clickable: true }}
-        spaceBetween={30}
+        spaceBetween={100}
         slidesPerView={1}
         breakpoints={{
           0: { slidesPerView: 1 },
@@ -159,13 +158,13 @@ export default function CursosCarousel() {
           1024: { slidesPerView: 3 },
         }}
       >
-        {cursos.map((curso, index) => (
+        {Professores.map((Professores, index) => (
           <SwiperSlide key={index}>
             <div className="card">
-              <div className="icone">{curso.icone}</div>
-              <h3>{curso.titulo}</h3>
+              <div className="icone">{Professores.icone}</div>
+              <h3>{Professores.titulo}</h3>
               <ul>
-                {curso.lista.map((item, i) => (
+                {Professores.lista.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
               </ul>

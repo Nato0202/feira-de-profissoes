@@ -1,5 +1,5 @@
 body {
-  .cursos {
+  .professores {
     padding-bottom: 1rem;
     background: linear-gradient(to right, #1d4e89, #0a2f5c);
     color: #fff;
@@ -12,14 +12,14 @@ body {
     }
 
     .card {
-      background: #fff;
+      background-color: #fff;
       color: #000;
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       
       @media (max-width:768px) {
-        max-height:300px ;
+        max-height:300px;
       }
 
       h3 {
