@@ -12,6 +12,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar__inner">
+        <div className="abu">
         {/* Logo */}
         <Link to="/" className="navbar__brand">
           <img src="../../images/image.png" alt="Logo" />
@@ -25,7 +26,7 @@ export default function Navbar() {
           <NavLink to="/register">Inscrição</NavLink>
           <NavLink to="/search">Busca</NavLink>
         </nav>
-
+        </div>
         {/* Busca */}
         <div className="navbar__search">
           <input type="text" placeholder="Pesquisar" className="navbar__search-input"/>
