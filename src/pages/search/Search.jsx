@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Search.scss"
 import Footer from "../../components/Footer/footer";
 import Navbar from "../../components/Navbar/navbar";
 
@@ -27,27 +28,36 @@ function Search() {
   return (
     <div>
       <Navbar />
-      <input
-        type="text"
-        placeholder="Nome"
-        value={nome}
-        onChange={(e) => setNome(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="QR Code"
-        value={qrCode}
-        onChange={(e) => setQrCode(e.target.value)}
-      />
-      <button onClick={handleSearch}>Buscar</button>
+      <main className="search">
+        <div className="search-form">
+          <h3>Vincular Qr Code:</h3>
+          <div className="form">
+            <input
+              id="nome"
+              type="text"
+              placeholder="Nome"
+              value={nome}
+              onChange={(e) => setNome(e.target.value)}
+            />
+            <input
+              id="qrCode"
+              type="text"
+              placeholder="QR Code"
+              value={qrCode}
+              onChange={(e) => setQrCode(e.target.value)}
+            />
+            <button id="btn-entrar" onClick={handleSearch}>Entrar</button>
 
-      <ul>
-        {results.map((v) => (
-          <li key={v.id}>
-            {v.nome} - {v.email} - {v.telefone}
-          </li>
-        ))}
-      </ul>
+            <ul>
+              {results.map((v) => (
+                <li key={v.id}>
+                  {v.nome} - {v.email} - {v.telefone}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </main>
       <Footer />
     </div>
   );
