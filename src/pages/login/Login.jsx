@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Login.scss"
 import Footer from "../../components/Footer/footer";
 import Navbar from "../../components/Navbar/navbar";
 
@@ -28,21 +29,28 @@ function Login() {
   return (
     <>
     <Navbar />
-    <form onSubmit={handleLogin}>
-      <input
-        type="email"
-        placeholder="E-mail"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Senha"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button type="submit">Entrar</button>
-    </form>
+      <main className="login">
+        <div className="login-form">
+          <h3>Login:</h3>
+          <form className="form" onSubmit={handleLogin}>
+            <input
+              id="email"
+              type="email"
+              placeholder="E-mail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              id="password"
+              type="password"
+              placeholder="Senha"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button id="btn-entrar" type="submit">Entrar</button>
+          </form>
+        </div>
+      </main>
     <Footer />
     </>
   );
