@@ -10,47 +10,23 @@ function Sobre() {
 
       <main className="sobre-container">
         <section className="sobre-header">
-          <h2>Sobre a Feira de Profissões:</h2>
+          <h3>Sobre a Feira de Profissões:</h3>
           <div className="sobre-info">
-            <p><b>Data:</b> 20/05/2025 - 21/05/2025</p>
-            <p><b>Horário:</b> 09h às 12h e 13h às 16h</p>
-            <p><b>Endereço:</b> Instituto Nossa Senhora do Patrocínio</p>
+            <div className="abu">
+                <p id="d"><b>Data:</b> 20/05/2025</p>
+                <p id="d"><b>Dia da Semana:</b> Sábado</p>
+              </div>
+              <div className="abu2">
+                <p id="d"><b>Horário:</b> (Manhã) 09h às 12h </p>
+                <p id="d"><b>Horário:</b> (Tarde) 13h às 16h</p>
+              </div>
+            <p className="a"><b>Endereço:</b> Av. Coronel Octaviano de Freitas Costa. 463-Socorro São Paulo</p>
           </div>
         </section>
 
         <section className="sobre-mapa">
-          <iframe
-            title="Localização"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3"
-            width="100%"
-            height="300"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
-        </section>
-
-        <section className="sobre-mapas">
-          <h3>Mapas:</h3>
-          <div className="mapas-lista">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="mapa-card">
-                <img
-                  src={`/images/mapa${i}.png`}
-                  alt={`Mapa ${i}`}
-                />
-                <div className="legenda">
-                  <p><b>Legenda:</b></p>
-                  <ul>
-                    <li>Pavilhão 1</li>
-                    <li>Pavilhão 2</li>
-                    <li>Banheiros</li>
-                    <li>Alimentação</li>
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
+          <h2>Mapa:</h2>
+          <img src="../../../public/images/mapa-frei.png" alt="mapa-frei" />
         </section>
       </main>
 

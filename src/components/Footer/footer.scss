@@ -18,10 +18,12 @@
                 #pwiimg{
                     width: 150px;
                     height: 85px;
+                    border-radius: 10px;
                 }
                 #santanderimg{
                     width: 150px;
                     height: 85px;
+                    border-radius: 10px;
                 }
             }
         }
@@ -49,24 +51,10 @@
                 }
             }
         }
-
-        .fair-logo{
-                display: flex;
-                justify-content: center;
-                gap: 15px;
-
-                #fairSantander{
-                    width: 50px;
-                    height: 25px;
-                }
-                #fairPWI{
-                    width: 50px;
-                    height: 25px;
-                }
-                #fairFeira{
-                    width: 50px;
-                    height: 25px;
-                }
-            }
+        .End{
+            width: 97vw;
+            border-top:3px solid white;
+            background-color: white;
+        }
     }
 }

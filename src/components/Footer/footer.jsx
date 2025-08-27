@@ -30,13 +30,8 @@ export default function Footer() {
         </div>
       </section>
 
-      <div className="fair-logo">
-          <img id="fairSantander" src="../../../public/images/Santander.png" alt="Santander" />
-          <img id="fairPWI" src="../../../public/images/PWI.jpg" alt="PWI" />
-          <img id="fairFeira" src="../../../public/images/image.png" alt="Feira de Profissões" />
-      </div>
-      <div>
-        <img src="" alt="" />
+      <div className="End">
+        <img src="../../../public/images/frei-logo.png" alt="frei-logo" />
       </div>
     </footer>
   );

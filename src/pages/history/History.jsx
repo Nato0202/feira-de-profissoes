@@ -11,11 +11,25 @@ import "./history.scss";
         <section className="historia-header">
           <h2>História do Instituto:</h2>
             <div className="historia-card">
-              <img src="/src/assets/images/image.png" alt="Instituto" />
+              <div className="historia-card-img">
+                <img id="historiaimg" src="../../../public/images/ISNSF.png" alt="Instituto" />
+              </div>
+              <div className="historia-card-txt">
                 <p>
-                A feira nasceu em 2010 com o objetivo de aproximar estudantes do
-                mercado de trabalho e orientar sobre carreiras...
+                  A Ação Social teve seu início em 1970, com a vinda de um frade
+                  <br/>Franciscano, oriundo da Itália, chamado de Frate 
+                  <br/>Severino, conhecido carinhosamente no Brasil como Frei 
+                  <br/>Xavier. Sua primeira obra foi construir uma igreja e integrar a 
+                  <br/>comunidade em torno dos princípios da fé Católica. Com esse
+                  <br/>convívio, começaram a brotar ideias, na direção de uma Ação
+                  <br/>Social Nossa Senhora de Fátima, com o grande objetivo de
+                  <br/>ajudar os jovens mais carentes na região. A Ação Social,
+                  <br/>divide-se em vários grupos de atividades, todas no sentido de
+                  <br/>assistir a comunidade, tendo como pilastra o Ser Humano
+                  <br/>desde a infância, seguindo com a juventude, na preparação do
+                  <br/>Caminho para Maioridade (Cidadania).
                 </p>
+              </div>
             </div>
         </section>
 

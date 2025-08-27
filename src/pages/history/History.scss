@@ -1,0 +1,43 @@
+.historia-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .historia-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 25px;
+        width: 97vw;
+        border-bottom: 3px solid white;
+
+        .historia-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            @media (max-width:768px){
+                .historia-card-img{
+                    #historiaimg{
+                        height: 350px;
+                        width: 320px;
+                        border: 4px solid black;
+                    }
+                }
+                .historia-card-txt{
+                    padding: 5px;
+                    width: 340px;
+                    height: 230px;
+                    font-size: 12px;
+                    text-align:justify;
+                    border: 4px solid black;
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}

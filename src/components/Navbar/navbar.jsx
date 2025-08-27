@@ -11,13 +11,12 @@ export default function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="navbar__inner">
-        <div className="abu">
-        {/* Logo */}
+      {/* Logo */}
         <Link to="/" className="navbar__brand">
           <img src="../../images/image.png" alt="Logo" />
         </Link>
-        
+      <div className="navbar__inner">
+        <div className="abu">
         {/* Menu Desktop */}
         <nav className="navbar__desktop-menu">
           <NavLink to="/about">Sobre</NavLink>

@@ -1,0 +1,81 @@
+.sobre-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width:768px) {
+        max-width: 468px;
+    }
+    .sobre-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (max-width:768px) {
+            width: 468px;
+        }
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 10px;
+            height: 40px;
+        }
+        .sobre-info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .abu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 25px;
+            }
+            .abu2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap:25px;
+            }
+            p{  
+                display: flex;
+                justify-content: space-between;
+                font-size: 13px;
+                width: 200px;
+                color: black;
+                border: 1px solid white;
+                border-radius: 25px;
+                background-color: white;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .a{
+                width: 440px;
+            }
+        }
+    }
+
+    .sobre-mapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2{
+            width: 130px;
+            border: 1px solid rgba(255, 255, 255, 0.582);
+            border-radius: 10px;
+        }
+        img{
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    }
+}
