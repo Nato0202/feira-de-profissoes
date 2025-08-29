@@ -1,5 +1,5 @@
 main{
-  overflow-x: hidden;
+
   max-width: 468px;
   @media (max-width:768px) {
     min-width: 97vw;
@@ -12,7 +12,7 @@ main{
 
       #apresentacao{
         height: 300px;
-        min-width: 468px;
+        width: 97vw;
       }
     }
     .carrosel-cursos{

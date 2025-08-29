@@ -1,178 +1,70 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "./carrossel.scss";
-
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function CursosCarousel() {
-  const cursos = [
-    {
-      titulo: "ADMINISTRAÇÃO",
-      icone: "👨‍💼",
-      lista: [
-        "Finanças",
-        "Marketing",
-        "Recursos humanos",
-        "Empreendedorismo",
-        "Estratégia",
-        "Comportamento organizacional",
-      ],
-    },
-    {
-      titulo: "INFORMÁTICA",
-      icone: "💻",
-      lista: [
-        "Fundamentos da computação",
-        "Pacote Office",
-        "Programação",
-        "Internet e redes",
-        "Design gráfico",
-        "Banco de dados",
-      ],
-    },
-    {
-      titulo: "COMUNICAÇÃO VISUAL",
-      icone: "🎨",
-      lista: [
-        "Design Gráfico",
-        "Tipografia",
-        "Identidade Visual",
-        "Ilustração",
-        "Fotografia",
-        "Multimídia",
-      ],
-    },
-    {
-      titulo: "ELETROMECÂNICA DE AUTOS",
-      icone: "🚗",
-      lista: [
-        "Fundamentos de Mecânica",
-        "Circuitos Elétricos",
-        "Sistemas Eletrônicos",
-        "Motores Elétricos",
-        "Sistemas de Transmissão",
-        "Diagnóstico e Manutenção",
-      ],
-    },
-    {
-      titulo: "SECRETARIADO",
-      icone: "📝",
-      lista: [
-        "Gestão de Agenda",
-        "Atendimento ao Público",
-        "Organização de Documentos",
-        "Apoio Administrativo",
-        "Comunicação Eficiente",
-        "Uso de Ferramentas",
-      ],
-    },
-    {
-      titulo: "ELETROTÉCNICA",
-      icone: "🔌",
-      lista: [
-        "Circuitos Elétricos",
-        "Teoria dos Sistemas Elétricos",
-        "Máquinas Elétricas",
-        "Eletrônica",
-        "Automação",
-        "Segurança Elétrica",
-      ],
-    },
-    {
-      titulo: "ELETRICISTA INSTALADOR",
-      icone: "⚡",
-      lista: [
-        "Instalação de Sistemas Elétricos",
-        "Manutenção e Reparo",
-        "Leitura de Projetos",
-        "Segurança",
-        "Atendimento ao Cliente",
-      ],
-    },
-    {
-      titulo: "INFORMÁTICA (BÁSICA)",
-      icone: "🖥️",
-      lista: [
-        "Hardware e Software",
-        "Sistemas Operacionais",
-        "Pacotes de Escritório",
-        "Navegação na Internet",
-        "Armazenamento de Dados",
-        "Multimídia",
-      ],
-    },
-    {
-      titulo: "ASSISTENTE ADMINISTRATIVO",
-      icone: "📑",
-      lista: [
-        "Gerenciamento de Documentos",
-        "Atendimento ao Cliente",
-        "Agendamento e Coordenação",
-        "Suporte Financeiro",
-        "Uso de Ferramentas Tecnológicas",
-        "Comunicação",
-      ],
-    },
-    {
-      titulo: "ASSISTENTE DE MÍDIAS SOCIAIS",
-      icone: "📱",
-      lista: [
-        "Criação de Conteúdo",
-        "Gerenciamento de Perfis",
-        "Interação com o Público",
-        "Planejamento Estratégico",
-        "Tendências e Inovação",
-      ],
-    },
-    {
-      titulo: "INGLÊS",
-      icone: "📘",
-      lista: [
-        "Inglês básico - intermediário (Diurno)",
-        "Inglês básico - (Noturno)",
-        "Inglês básico - Semipresencial (Noturno)",
-        "Inglês Intermediário (Noturno)",
-        "Inglês Pré-Avançado (Sábados)",
-        "Inglês Avançado (Sábados)",
-        "Inglês Melhor idade (Diurno)",
-      ],
-    },
-  ];
-
   return (
-    <section className="cursos">
-      <h2 className="titulo">Cursos:</h2>
+    <section className="cursos container my-5">
+      <h2 className="titulo mb-4">Cursos:</h2>
 
-      <Swiper
-        modules={[Navigation, Pagination]}
-        navigation
-        pagination={{ clickable: true }}
-        spaceBetween={30}
-        slidesPerView={1}
-        breakpoints={{
-          0: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-      >
-        {cursos.map((curso, index) => (
-          <SwiperSlide key={index}>
-            <div className="card">
-              <div className="icone">{curso.icone}</div>
-              <h3>{curso.titulo}</h3>
-              <ul>
-                {curso.lista.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div id="carouselCursos" className="carousel slide" data-bs-ride="carousel">
+        {/* Indicadores (bolinhas) */}
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselCursos"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselCursos"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselCursos"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        {/* Slides */}
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src="/imagens/curso1.jpg" className="d-block w-100" alt="Curso 1" />
+          </div>
+          <div className="carousel-item">
+            <img src="/imagens/curso2.jpg" className="d-block w-100" alt="Curso 2" />
+          </div>
+          <div className="carousel-item">
+            <img src="/imagens/curso3.jpg" className="d-block w-100" alt="Curso 3" />
+          </div>
+        </div>
+
+        {/* Botões de navegação */}
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselCursos"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Anterior</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselCursos"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Próximo</span>
+        </button>
+      </div>
     </section>
   );
 }
