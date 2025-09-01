@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
 import CursosCarousel from '../../components/carrossel/carrossel.jsx';
 import ProfessoresCarousel from "../../components/carrossel/carrossel-Prof.jsx";
+import { Carousel } from "../../components/carrossel/teste.jsx";
 
 
 function Home() {
