@@ -28,6 +28,12 @@ main{
     .video-fundo{
       height: 400px;
       width: 97vw;
+
+      .video{
+        height: 400px;
+        width: 97vw;
+        object-fit: cover;
+      }
     }
   }
 }
