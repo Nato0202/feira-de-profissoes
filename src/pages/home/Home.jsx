@@ -22,7 +22,6 @@ function Home() {
                 <source src="/src/assets/videos/video.mp4" type="video/mp4" />
               </video>
             </div>
-            <div className="carrosel-professores"><ProfessoresCarousel/></div>
         </section>
       </main>
       <Footer />

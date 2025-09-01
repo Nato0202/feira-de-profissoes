@@ -11,13 +11,35 @@ body {
       margin-bottom: 1rem;
     }
 
+    // Swiper container styles to fix scroll issues
+    .swiper {
+      overflow: hidden;
+      width: 97vw;
+      max-width: 97vw;
+      position: relative;
+    }
+
+    .swiper-wrapper {
+      display: flex;
+      align-items: stretch;
+      width: 97vw;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      width: 97vw;
+      flex-shrink: 0;
+    }
+
     .card {
       background: #fff;
       color: #000;
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      
+
       @media (max-width:768px) {
         max-height:300px ;
       }
@@ -47,14 +69,26 @@ body {
     // Navegação do carrossel
     .swiper-button-prev,
     .swiper-button-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
       color: #ffa600;
       font-weight: bold;
       transition: 0.3s;
 
       &:hover {
         color: #ff7700; // destaque dourado no hover
-        transform: scale(1.2);
+        transform: translateY(-50%) scale(1.2);
       }
+    }
+
+    .swiper-button-prev {
+      left: -20px;
+    }
+
+    .swiper-button-next {
+      right: -20px;
     }
   }
 }

@@ -1,9 +1,9 @@
 #root {
   @media (max-width:768px) {
-    max-width: 468px;
+    max-width: 100%;
   }
   max-width: 1280px;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -39,6 +39,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-image: url(../../../public/images/background.png);
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 h1 {

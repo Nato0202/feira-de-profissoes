@@ -153,11 +153,16 @@ export default function CursosCarousel() {
         pagination={{ clickable: true }}
         spaceBetween={30}
         slidesPerView={1}
+        grabCursor={true}
+        touchRatio={1.5}
+        touchAngle={45}
         breakpoints={{
-          0: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          0: { slidesPerView: 1, spaceBetween: 10 },
+          768: { slidesPerView: 2, spaceBetween: 20 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
         }}
+        centeredSlides={false}
+        centeredSlidesBounds={false}
       >
         {cursos.map((curso, index) => (
           <SwiperSlide key={index}>
