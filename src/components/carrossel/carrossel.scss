@@ -41,7 +41,7 @@ body {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
       @media (max-width:768px) {
-        max-height:300px;
+        max-height:500px;
    
       }
 
@@ -85,11 +85,11 @@ body {
     }
 
     .swiper-button-prev {
-      left: -20px;
+      left: 0px;
     }
 
     .swiper-button-next {
-      right: -20px;
+      right: 0px;
     }
   }
 }
