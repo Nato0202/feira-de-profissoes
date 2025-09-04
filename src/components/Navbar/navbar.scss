@@ -1,26 +1,52 @@
 .navbar{
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  height: 200px;
 
   border-bottom: 3px solid white;
+
+  @media (max-width:768px) {
+    height: 150px;
+  }
+
+  .navbar__brand{
+    margin-left: 15px;
+    img{
+      @media (max-width:768px) {
+        margin-top: 25px;
+        height: 100px;
+      }
+      height: 150px;
+      border-radius: 140px;
+    }
+  }
 
   .navbar__inner{
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: row;
+      flex-direction: column;
       height: 150px;
       gap: 15px;
+      width:100vw;
+
+      @media (max-width:768px) {
+        flex-direction: row;
+      }
     }
     .navbar__search{
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: white;
-      width: 85%;
+      width: 450px;
       border-radius: 20px;
+
+      @media (max-width:768px) {
+        width: 200px;
+      }
 
         .navbar__search-button{
           height: 35px;
@@ -66,4 +92,10 @@
     @media (max-width: 768px) {
       width: 97vw;
     }
+  .spacement{
+    @media (max-width:768px) {
+        width: 120px;
+      }
+    width: 270px;
+  }
 }

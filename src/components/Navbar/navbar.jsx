@@ -12,9 +12,11 @@ export default function Navbar() {
   return (
     <header className="navbar">
       {/* Logo */}
-        <Link to="/" className="navbar__brand">
-          <img src="../../images/image.png" alt="Logo" />
-        </Link>
+        <div className="imglogodiv">
+          <Link to="/" className="navbar__brand">
+            <img className="logo-2" src="../../images/logo-2.png" alt="Logo" />
+          </Link>
+        </div>
       <div className="navbar__inner">
         <div className="abu">
         {/* Menu Desktop */}
@@ -45,6 +47,7 @@ export default function Navbar() {
         {/* Menu Hamburguer */}
         <HamburgerMenu isOpen={isMenuOpen} onClose={closeMenu} />
       </div>
+      <div className="spacement"></div>
     </header>
   );
 }

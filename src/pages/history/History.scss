@@ -43,24 +43,43 @@
             }
 
             @media (max-width:768px){
-                flex-direction: column;
+                width: 100vw;
+                max-height: 225px;
+                flex-direction: row;
+
                 .historia-card-img{
                     #historiaimg{
-                        height: 350px;
-                        width: 320px;
-                        border: 4px solid black;
+                        margin-left: 7px;
+                        height: 250px;
+                        width: 220px;
+                        border-right: 4px solid black;
                     }
                 }
                 .historia-card-txt{
                     padding: 5px;
-                    width:70vw;
+                    width:40vw;
                     height: fit-content;
-                    font-size: 12px;
+                    font-size: 10px;
                     text-align: justify;
                     border: 4px solid black;
                     background-color: white;
                     color: black;
                 }
+            }
+        }
+    }
+
+    .historia-fotos{
+        .fotos-grid{
+            .img-aluno{
+                @media (max-width:768px) {
+                    width: 500px;
+                    height: 250px;
+                }
+                border: 1px solid white;
+                border-radius: 5px;
+                width: 700px;
+                height: 350px;
             }
         }
     }

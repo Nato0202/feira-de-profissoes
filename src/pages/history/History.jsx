@@ -35,13 +35,7 @@ import "./history.scss";
         <section className="historia-fotos">
           <h3>Fotos dos alunos:</h3>
             <div className="fotos-grid">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <img
-                  key={i}
-                  src="/src/assets/images/image.png"
-                  alt={`Foto ${i}`}
-                />
-              ))}
+              <img className="img-aluno" src="../../../public/images/img-aluno-1.png" alt="img-aluno" />
             </div>
         </section>
       </main>

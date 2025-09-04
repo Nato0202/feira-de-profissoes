@@ -157,6 +157,7 @@ export default function ProfessorCarousel() {
         touchRatio={1.5}
         touchAngle={45}
         breakpoints={{
+          0: { slidesPerView: 1, spaceBetween: 50 },
           768: { slidesPerView: 1, spaceBetween: 10 },
           1024: { slidesPerView: 2, spaceBetween: 20 },
         }}
