@@ -1,18 +1,40 @@
 main{
-
-  max-width: 468px;
+  width: 100vw;
   @media (max-width:768px) {
     min-width: 97vw;
+    max-width: 468px;
   }
   section{
-    .apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .apresentacao {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%; // usa 100% do container
 
-      #apresentacao{
-        height: 300px;
-        width: 97vw;
+      .video-antes{
+        margin: 0;
+        padding: 0;
+
+        .video {
+          width: 100vw;   // ocupa a largura da tela
+          height: 500px;  // altura fixa
+          object-fit: cover; // mantém proporção e cobre toda a área
+          border-bottom: 2px solid white;
+        }
+      }
+
+      
+
+      @media (max-width: 768px) {
+        .video {
+          width: 97vw;
+          height: 300px;
+        }
       }
     }
     .carrosel-cursos{
@@ -20,20 +42,13 @@ main{
       background: linear-gradient(to right, #1d4e89, #0a2f5c);
       height: 500px;
     }
+    .spacement{
+      height: 50px;
+    }
     .carrosel-professores{
       border: 2px solid white;
       background: linear-gradient(to right, #1d4e89, #0a2f5c);
       height: 500px;
-    }
-    .video-fundo{
-      height: 400px;
-      width: 97vw;
-
-      .video{
-        height: 400px;
-        width: 97vw;
-        object-fit: cover;
-      }
     }
   }
 }

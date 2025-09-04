@@ -1,18 +1,17 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-
-// estilos do Swiper
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import "./carrossel-Prof.scss";
 
-export default function ProfessoresCarousel() {
-  const Professores = [
+
+
+export default function ProfessorCarousel() {
+  const professor = [
     {
-      titulo: "Bruno Oliveira",
+      titulo: "ADMINISTRAÇÃO",
       icone: "👨‍💼",
       lista: [
         "Finanças",
@@ -24,7 +23,7 @@ export default function ProfessoresCarousel() {
       ],
     },
     {
-      titulo: "Pedro Moreira",
+      titulo: "INFORMÁTICA",
       icone: "💻",
       lista: [
         "Fundamentos da computação",
@@ -36,7 +35,7 @@ export default function ProfessoresCarousel() {
       ],
     },
     {
-      titulo: "Natan",
+      titulo: "COMUNICAÇÃO VISUAL",
       icone: "🎨",
       lista: [
         "Design Gráfico",
@@ -48,7 +47,7 @@ export default function ProfessoresCarousel() {
       ],
     },
     {
-      titulo: "Robson",
+      titulo: "ELETROMECÂNICA DE AUTOS",
       icone: "🚗",
       lista: [
         "Fundamentos de Mecânica",
@@ -60,7 +59,7 @@ export default function ProfessoresCarousel() {
       ],
     },
     {
-      titulo: "Eduardo",
+      titulo: "SECRETARIADO",
       icone: "📝",
       lista: [
         "Gestão de Agenda",
@@ -152,23 +151,21 @@ export default function ProfessoresCarousel() {
         modules={[Navigation, Pagination]}
         navigation
         pagination={{ clickable: true }}
-        spaceBetween={30}
-        slidesPerView={1}
+        spaceBetween={20}
+        slidesPerView={2}
         grabCursor={true}
         touchRatio={1.5}
         touchAngle={45}
         breakpoints={{
-          0: { slidesPerView: 1, spaceBetween: 10 },
-          768: { slidesPerView: 2, spaceBetween: 20 },
-          1024: { slidesPerView: 3, spaceBetween: 30 },
+          768: { slidesPerView: 1, spaceBetween: 10 },
+          1024: { slidesPerView: 2, spaceBetween: 20 },
         }}
         centeredSlides={false}
         centeredSlidesBounds={false}
-        className="meu-swiper"
       >
-        {Professores.map((professor, index) => (
+        {professor.map((professor, index) => (
           <SwiperSlide key={index}>
-            <div className="card">
+            <div className="card container">
               <div className="icone">{professor.icone}</div>
               <h3>{professor.titulo}</h3>
               <ul>

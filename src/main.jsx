@@ -7,8 +7,6 @@ import Home from "./pages/home/Home.jsx"
 import Login from "./pages/login/Login.jsx"
 import Register from "./pages/register/Register.jsx"
 import Search from "./pages/search/Search.jsx"
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./index.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

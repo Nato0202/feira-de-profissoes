@@ -1,8 +1,9 @@
- import React from "react";
+import { Link } from 'react-router';
 import './Home.scss'
 import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
 import CursosCarousel from '../../components/carrossel/carrossel.jsx';
+import ProfessorCarousel from "../../components/carrossel/carrossel-Prof.jsx";
 
 
 
@@ -14,13 +15,16 @@ function Home() {
       <main>
         <section>
           <div className="apresentacao">
+            <Link className='video-antes' to="/register">
               <video className="video" autoPlay loop muted>
                 <source src="/src/assets/videos/background_feira.mp4" type="video/mp4" />
               </video>
+            </Link>
           </div>
+            <div className="spacement"></div>
             <div className="carrosel-cursos"><CursosCarousel/></div>
-            <div className="video-fundo">
-            </div>
+            <div className="spacement"></div>
+            <div className="carrosel-prof"><ProfessorCarousel/></div>
         </section>
       </main>
       <Footer />

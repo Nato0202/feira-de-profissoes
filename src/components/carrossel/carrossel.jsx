@@ -152,7 +152,7 @@ export default function CursosCarousel() {
         navigation
         pagination={{ clickable: true }}
         spaceBetween={30}
-        slidesPerView={1}
+        slidesPerView={3}
         grabCursor={true}
         touchRatio={1.5}
         touchAngle={45}
@@ -166,7 +166,7 @@ export default function CursosCarousel() {
       >
         {cursos.map((curso, index) => (
           <SwiperSlide key={index}>
-            <div className="card">
+            <div className="card container">
               <div className="icone">{curso.icone}</div>
               <h3>{curso.titulo}</h3>
               <ul>
