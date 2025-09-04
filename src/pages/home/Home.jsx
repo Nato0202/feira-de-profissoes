@@ -24,6 +24,8 @@ function Home() {
             <div className="spacement"></div>
             <div className="carrosel-cursos"><CursosCarousel/></div>
             <div className="spacement"></div>
+            <div className='spacement'></div>
+            <div className="spacement"></div>
             <div className="carrosel-prof"><ProfessorCarousel/></div>
         </section>
       </main>
