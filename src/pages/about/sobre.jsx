@@ -13,12 +13,12 @@ function Sobre() {
           <h3>Sobre a Feira de Profissões:</h3>
           <div className="sobre-info">
             <div className="abu">
-                <p id="d"><b>Data:</b> 20/05/2025</p>
-                <p id="d"><b>Dia da Semana:</b> Sábado</p>
+                <p><b>Data:</b> 20/05/2025</p>
+                <p><b>Dia da Semana:</b> Sábado</p>
               </div>
               <div className="abu2">
-                <p id="d"><b>Horário:</b> (Manhã) 09h às 12h </p>
-                <p id="d"><b>Horário:</b> (Tarde) 13h às 16h</p>
+                <p><b>Horário:</b> (Manhã) 09h às 12h </p>
+                <p><b>Horário:</b> (Tarde) 13h às 16h</p>
               </div>
             <p className="a"><b>Endereço:</b> Av. Coronel Octaviano de Freitas Costa. 463-Socorro São Paulo</p>
           </div>

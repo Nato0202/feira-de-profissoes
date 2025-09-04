@@ -32,14 +32,6 @@ import "./history.scss";
             </div>
         </section>
 
-        <section className="historia-objetivo">
-          <h3>Objetivo dos cursos:</h3>
-            <p>
-              Proporcionar aos alunos conhecimento técnico e prático para a
-              inserção no mercado de trabalho...
-            </p>
-        </section>
-
         <section className="historia-fotos">
           <h3>Fotos dos alunos:</h3>
             <div className="fotos-grid">
