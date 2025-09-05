@@ -15,7 +15,7 @@
 
         .historia-card{
             height: 455px;
-            width: 97vw;
+            width: 100vw;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -59,7 +59,7 @@
                     @media (max-width:768px){
                         margin-left: 20px;
                         min-width:40vw;
-                        height: 18vh;
+                        height: max-content;
                         font-size: 8px;
                         text-align: justify;
                         border: 4px solid black;
