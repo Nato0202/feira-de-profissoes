@@ -33,7 +33,6 @@ import "./history.scss";
         </section>
 
         <section className="historia-fotos">
-          <h3>Fotos dos alunos:</h3>
             <div className="fotos-grid">
               <img className="img-aluno" src="../../../public/images/img-aluno-1.png" alt="img-aluno" />
             </div>

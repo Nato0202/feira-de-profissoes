@@ -21,11 +21,11 @@ export default function Navbar() {
         <div className="abu">
         {/* Menu Desktop */}
         <nav className="navbar__desktop-menu">
-          <NavLink to="/about">Sobre</NavLink>
-          <NavLink to="/history">História</NavLink>
-          <NavLink to="/login">Login</NavLink>
-          <NavLink to="/register">Inscrição</NavLink>
-          <NavLink to="/search">Busca</NavLink>
+          <NavLink className="navlink" to="/about">Sobre</NavLink>
+          <NavLink className="navlink" to="/history">História</NavLink>
+          <NavLink className="navlink" to="/login">Login</NavLink>
+          <NavLink className="navlink" to="/register">Inscrição</NavLink>
+          <NavLink className="navlink" to="/search">Busca</NavLink>
         </nav>
         </div>
         {/* Busca */}

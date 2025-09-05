@@ -145,13 +145,13 @@ export default function CursosCarousel() {
 
   return (
     <section className="cursos">
-      <h2 className="titulo">Cursos:</h2>
+      <h2 className="titulo">CURSOS:</h2>
 
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
         pagination={{ clickable: true }}
-        spaceBetween={30}
+        spaceBetween={-100}
         slidesPerView={3}
         grabCursor={true}
         touchRatio={1.5}
@@ -159,7 +159,7 @@ export default function CursosCarousel() {
         breakpoints={{
           0: { slidesPerView: 1, spaceBetween: 10 },
           768: { slidesPerView: 2, spaceBetween: 20 },
-          1024: { slidesPerView: 3, spaceBetween: 30 },
+          1024: { slidesPerView: 3, spaceBetween: -100 },
         }}
         centeredSlides={false}
         centeredSlidesBounds={false}

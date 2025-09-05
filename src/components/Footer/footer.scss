@@ -1,29 +1,30 @@
 .footer {
+    padding-top: 55px;
     margin-top: 55px;
     border-top: 3px solid white;
     display: flex;
-        flex-direction: column;
-        width:100vw;
-        background-image: url(../../../public/images/footer.png);
+    flex-direction: column;
+    width:100vw;
+    background-image: url(../../../public/images/footer.png);
 
-        .exhibitors{
-            .logos{
-                display: flex;
-                justify-content: center;
-                gap: 150px;
+    .exhibitors{
+        .logos{
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            
+            #pwiimg{
+                width: 160px;
+                height: 70px;
                 
-                #pwiimg{
-                    width: 350px;
-                    height: 205px;
-                    border-radius: 10px;
-                }
-                #santanderimg{
-                    width: 350px;
-                    height: 205px;
-                    border-radius: 10px;
-                }
+            }
+            #santanderimg{
+                width: 160px;
+                height: 70px;
+                
             }
         }
+    }
         
         .contact{
             height: 200px;

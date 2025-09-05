@@ -3,8 +3,6 @@ import './Home.scss'
 import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
 import CursosCarousel from '../../components/carrossel/carrossel.jsx';
-import ProfessorCarousel from "../../components/carrossel/carrossel-Prof.jsx";
-
 
 
 function Home() {
@@ -24,9 +22,6 @@ function Home() {
             <div className="spacement"></div>
             <div className="carrosel-cursos"><CursosCarousel/></div>
             <div className="spacement"></div>
-            <div className='spacement'></div>
-            <div className="spacement"></div>
-            <div className="carrosel-prof"><ProfessorCarousel/></div>
         </section>
       </main>
       <Footer />

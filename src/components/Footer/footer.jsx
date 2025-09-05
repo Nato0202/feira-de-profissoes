@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <section className="exhibitors">
-        <h3>Patrocinadores:</h3>
+        <h3>PATROCINADORES:</h3>
         <div className="logos">
           <img id="santanderimg" src="../../../public/images/Santander.png" alt="Santander" />
           <img id="pwiimg" src="/images/Pwi.jpg" alt="PWI Sistemas" />

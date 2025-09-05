@@ -31,7 +31,7 @@
             }
             .historia-card-txt{
                 margin-bottom: -30px;
-                margin-right: 60px;
+                margin-right: 170px;
                 padding: 5px;
                 width:40vw;
                 height: fit-content;
@@ -56,14 +56,16 @@
                     }
                 }
                 .historia-card-txt{
-                    padding: 5px;
-                    width:40vw;
-                    height: fit-content;
-                    font-size: 10px;
-                    text-align: justify;
-                    border: 4px solid black;
-                    background-color: white;
-                    color: black;
+                    @media (max-width:768px){
+                        margin-left: 20px;
+                        min-width:40vw;
+                        height: 18vh;
+                        font-size: 8px;
+                        text-align: justify;
+                        border: 4px solid black;
+                        background-color: white;
+                        color: black;
+                    }
                 }
             }
         }
@@ -76,6 +78,7 @@
                     width: 500px;
                     height: 250px;
                 }
+                margin-top: 55px;
                 border: 1px solid white;
                 border-radius: 5px;
                 width: 700px;

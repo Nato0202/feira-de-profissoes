@@ -131,7 +131,7 @@ function Register() {
           <select className="container container2" name="ja_foi_aluno" value={formData.ja_foi_aluno} onChange={handleChange}>
             <option value="0">Já foi aluno do Frei?</option>
             <option value="1">Sim</option>
-            <option value="0">Não</option>
+            <option value="2">Não</option>
           </select>
           </div>
           <div className="cpf">

@@ -1,12 +1,11 @@
 body {
   .cursos {
+    background: none;
     height: max-content;
     padding-right: 1rem;
     padding-bottom: 1rem;
-    background: linear-gradient(to right, #1d4e89, #0a2f5c);
     color: #fff;
     text-align: center;
-    border:2px solid white;
 
     @media (max-width:768px) {
       border: none;
@@ -16,6 +15,11 @@ body {
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 1rem;
+      border: 1px solid white;
+      padding: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 15px;
     }
 
     // Swiper container styles to fix scroll issues
@@ -46,10 +50,10 @@ body {
       justify-content: center;
       align-items: center;
       
-      min-height: 350px;
-      max-height: 350px;
-      min-width: 240px;
-      max-width: 240px;
+      min-height: 458px;
+      height: max-content;
+      min-width: 250px;
+      max-width: 250px;
 
       @media (max-width:768px) {
         min-height: 270px;
@@ -137,11 +141,11 @@ body {
     }
 
     .swiper-button-prev {
-      left: 0px;
+      left: 35px;
     }
 
     .swiper-button-next {
-      right: 0px;
+      right: 35px;
     }
   }
 }

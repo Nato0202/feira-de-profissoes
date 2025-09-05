@@ -30,7 +30,7 @@ function Search() {
       <Navbar />
       <main className="search">
         <div className="search-form">
-          <h3>Vincular Qr Code:</h3>
+          <h3>Vincular QR Code:</h3>
           <div className="form">
             <input
               id="nome"
@@ -46,7 +46,7 @@ function Search() {
               value={qrCode}
               onChange={(e) => setQrCode(e.target.value)}
             />
-            <button id="btn-entrar" onClick={handleSearch}>Entrar</button>
+            <button id="btn-entrar" onClick={handleSearch}>Buscar</button>
 
             <ul>
               {results.map((v) => (
