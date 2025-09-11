@@ -65,6 +65,7 @@ body {
     }
 
     .card {
+      transition: 0.7s;
       background: #fff;
       color: #000;
       padding: 1.5rem;
@@ -123,6 +124,12 @@ body {
         color: #1d4e89;
       }
     }
+    .card:hover,
+    .card:focus{
+      transform: scale(105%);
+    }  
+    
+    
 
     // Navegação do carrossel
     .swiper-button-prev,

@@ -27,14 +27,14 @@
                 justify-content: center;
                 align-items: center;
                 width: 40vw;
-                height: 20vh;
+                height: fit-content;
                 gap: 10px;
                 margin-bottom: 20px;
                 margin-top:-10px ;
 
                 #email{
                     width: 80%;
-                    height: 35px;
+                    min-height: 35px;
                     border:none;
                     border-radius: 15px;
                     padding-left: 15px;
@@ -43,7 +43,7 @@
                 #password{
                     margin-top: 7px;
                     width: 80%;
-                    height: 35px;
+                    min-height: 35px;
                     border: none;
                     border-radius: 15px;
                     padding-left: 15px;
@@ -59,8 +59,8 @@
             }
 
         @media (max-width:768px) {
-            width: 80%;
-            height: 200px;
+            width: 80vw;
+            height: fit-content;
             
             .form{
                 display: flex;
