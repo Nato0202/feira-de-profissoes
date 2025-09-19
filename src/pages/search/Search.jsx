@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Search.scss"
 import Footer from "../../components/Footer/footer";
 import Navbar from "../../components/Navbar/navbar";
+import { API_BASE_URL } from "../../config/api.js";
 
 function Search() {
   const [nome, setNome] = useState("");
@@ -11,7 +12,7 @@ function Search() {
   const handleSearch = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5001/api/auth/visitantes/search?nome=${encodeURIComponent(
+        `${API_BASE_URL}/api/auth/visitantes/search?nome=${encodeURIComponent(
           nome
         )}&qrCode=${encodeURIComponent(qrCode)}`
       );

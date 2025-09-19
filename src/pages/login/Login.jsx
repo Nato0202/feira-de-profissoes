@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Login.scss"
 import Footer from "../../components/Footer/footer";
 import Navbar from "../../components/Navbar/navbar";
+import { API_BASE_URL } from "../../config/api.js";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -10,7 +11,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5001/api/auth/login/aluno", {
+      const res = await fetch(`${API_BASE_URL}/api/auth/login/aluno`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, senha: password }),

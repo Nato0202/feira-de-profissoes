@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
+import { API_BASE_URL } from "../../config/api.js";
 import "../register/Register.scss";
 
 function Register() {
@@ -19,7 +20,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5001/api/auth/register/visitante", {
+      const response = await fetch(`${API_BASE_URL}/api/auth/register/visitante`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
