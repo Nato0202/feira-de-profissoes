@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
-import "./history.scss";
+import "./History.scss";
 
   function History () {
   return (
